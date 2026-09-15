@@ -1,172 +1,136 @@
-# CRUD_React-Ts-Node
+# 🧩 CRUD React-TS-Node - Projeto de Estudo
 
-Projeto full stack com:
+Projeto full stack de estudo com um CRUD completo, dividido em:
 
-- `client`: React + TypeScript + Vite + Tailwind CSS
-- `backend`: Node.js + Express + TypeScript + PostgreSQL
+- **`client/`** — React + TypeScript + Vite + Tailwind CSS
+- **`backend/`** — Node.js + Express + TypeScript + PostgreSQL (Drizzle ORM)
 
-## Estrutura
+---
 
-```bash
+## 🧠 Sobre o Projeto
+
+Este projeto foi desenvolvido com **fins educacionais**, visando:
+
+- Praticar a construção de uma aplicação full stack moderna
+- Integrar um frontend em React/TypeScript a uma API Node/Express
+- Trabalhar com PostgreSQL usando Drizzle ORM
+- Aplicar boas práticas de organização entre client e backend
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+### Backend
+- Node.js
+- Express
+- TypeScript
+- PostgreSQL (`pg`)
+- Drizzle ORM
+- bcrypt (hash de senhas)
+- dotenv, cors
+
+### Client
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- TanStack Query (`@tanstack/react-query`)
+- ESLint
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
 CRUD_React-Ts-Node/
-  client/
-  backend/
+├── backend/   # API em Node.js + Express + TypeScript + PostgreSQL
+└── client/    # Aplicação React + TypeScript + Vite + Tailwind
 ```
 
-## Comandos Provaveis Usados No Projeto
+---
 
-Observacao:
-Nao existe no repositorio um historico exato do terminal, entao a lista abaixo foi reconstruida com base nos arquivos `package.json`, `package-lock.json` e scripts do projeto.
+## ▶️ Como Executar
 
-## Backend
+### Pré-requisitos
 
-### Criacao inicial
+- Node.js instalado
+- PostgreSQL instalado e em execução
+- Um arquivo `.env` configurado no `backend` com as credenciais do banco
+
+### 1. Backend
 
 ```bash
 cd backend
-npm init -y
-```
-
-### Instalacao de dependencias
-
-```bash
-npm install express cors dotenv bcrypt pg drizzle-orm tsconfig-paths
-npm install @types/bcrypt
-```
-
-### Instalacao de dependencias de desenvolvimento
-
-```bash
-npm install -D typescript ts-node nodemon @types/express @types/cors @types/dotenv @types/pg
-```
-
-### Dependencia que tambem aparece no projeto
-
-```bash
-npm install -D @typescript/native-preview
-```
-
-### Rodar o backend
-
-```bash
+npm install
 npm run dev
 ```
 
-### Gerar build do backend
+Outros scripts disponíveis:
 
 ```bash
-npm run build
+npm run build   # gera o build de produção
+npm start       # roda o build gerado
 ```
 
-### Rodar build do backend
+### 2. Client
 
-```bash
-npm start
-```
-
-## Client
-
-### Criacao inicial provavel
-
-```bash
-npm create vite@latest client -- --template react-ts
-```
-
-### Instalacao de dependencias principais
+Em outro terminal:
 
 ```bash
 cd client
 npm install
-npm install react react-dom @tanstack/react-query
+npm run dev
 ```
 
-### Instalacao de dependencias de desenvolvimento
+Outros scripts disponíveis:
 
 ```bash
+npm run build     # gera o build de produção
+npm run preview   # visualiza o build gerado
+npm run lint      # executa o lint
+```
+
+---
+
+## 📦 Principais Dependências
+
+### Backend
+
+```bash
+npm install express cors dotenv bcrypt pg drizzle-orm tsconfig-paths
+npm install @types/bcrypt
+npm install -D typescript ts-node nodemon @types/express @types/cors @types/dotenv @types/pg
+```
+
+### Client
+
+```bash
+npm install react react-dom @tanstack/react-query
 npm install -D vite typescript @vitejs/plugin-react
 npm install -D tailwindcss @tailwindcss/postcss postcss autoprefixer
 npm install -D eslint @eslint/js typescript-eslint eslint-plugin-react-hooks eslint-plugin-react-refresh globals
 npm install -D @types/node @types/react @types/react-dom
 ```
 
-### Rodar o client
+---
 
-```bash
-npm run dev
-```
+## ⚠️ Observações
 
-### Gerar build do client
+- Este projeto ainda está em desenvolvimento.
+- Algumas funcionalidades podem ser melhoradas ou refatoradas.
+- O foco principal é aprendizado e evolução contínua.
 
-```bash
-npm run build
-```
+---
 
-### Rodar preview do client
+## 📄 Licença
 
-```bash
-npm run preview
-```
+Este projeto é distribuído sob a licença **MIT** — veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
 
-### Rodar lint
+Em resumo: **qualquer pessoa pode usar, copiar, modificar e distribuir este projeto**, inclusive para fins comerciais, **desde que mantenha o aviso de direitos autorais e a licença original** em cópias ou partes substanciais do software.
 
-```bash
-npm run lint
-```
+---
 
-## Scripts Confirmados Nos package.json
+## 👨‍💻 Autor
 
-### Backend
-
-```bash
-npm run dev
-npm run build
-npm start
-```
-
-### Client
-
-```bash
-npm run dev
-npm run build
-npm run preview
-npm run lint
-```
-
-## Exemplo Rapido Para Subir O Projeto
-
-### Terminal 1
-
-```bash
-cd backend
-npm install
-npm run dev
-```
-
-### Terminal 2
-
-```bash
-cd client
-npm install
-npm run dev
-```
-
-## Exemplo De Comandos Como O Que Voce Citou
-
-Se quiser instalar tipagens manualmente, exemplos:
-
-```bash
-npm install @types/bcrypt
-npm install -D @types/express
-npm install -D @types/cors
-npm install -D @types/pg
-```
-
-Se quiser instalar bibliotecas principais, exemplos:
-
-```bash
-npm install bcrypt
-npm install express
-npm install dotenv
-npm install cors
-npm install pg
-```
+Desenvolvido por **Guilherme Silva**
+Desenvolvedor Full Stack
