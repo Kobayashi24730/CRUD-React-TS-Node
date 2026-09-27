@@ -5,6 +5,7 @@ export default async function getUsers() {
     if(!response.ok){
         throw new Error("Erro ao buscar usuários");
     }
+    console.log(response);
     const data = await response.json()
     return data?.data ?? [];
 }

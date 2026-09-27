@@ -1,1 +1,1 @@
-export const API = "https://crud-react-ts-node.onrender.com/api";
+export const API = "http://127.0.0.1:5000/api";
